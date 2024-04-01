@@ -27,8 +27,8 @@ const Menu = () => {
          <h1 className='text-orange-500 font-bold text-4xl text-center '>Top Rated Menu Items</h1>
          <div className='flex flex-col lg:flex-row justify-between'>
          <div>
-            <p className='font-bold text-gray-700'>Filter Type</p>
-            <div className='flex justify-between flex-wrap '>
+            <p className='font-bold text-gray-700 m-2'>Filter Type</p>
+            <div className='flex justify-between flex-wrap mb-2 '>
                 <button onClick={()=>setfood(data)} className='m-1 rounded-full bg-orange-600 hover:bg-orange-600 py-1 px-3 hover:text-white '>All</button>
                 <button onClick={()=>filtertype('burger')} className='m-1 rounded-full bg-orange-600 hover:bg-orange-600 py-1 px-3 hover:text-white'>Burgers</button>
                 <button onClick={()=>filtertype('pizza')}
@@ -39,7 +39,7 @@ const Menu = () => {
             </div>   
 
             <div>
-                <p className='font-bold text-gray-700'>Filter Price</p>
+                <p className='font-bold text-gray-700 mb-2'>Filter Price</p>
                 <div className='flex justify-between max-w-[400px] w-full '>
                     <button onClick={()=>filterprice('$')} className='m-1 rounded-full bg-orange-600 hover:bg-orange-600 py-1 px-4 hover:text-white '>$</button>
                     <button onClick={()=>filterprice('$$')} className='m-1 rounded-full bg-orange-600  hover:bg-orange-600 py-1 px-3 hover:text-white '>$$</button>
@@ -58,7 +58,7 @@ const Menu = () => {
                 <div className='flex justify-between px-2 py-3'>
                     <p className='font-bold'>{item.name}</p>
                     <p>
-                        <span className='bg-orange-500 text-white p-2 rounded-full' 
+                        <span className='bg-orange-600 text-white p-2 rounded-full' 
                         >{item.price}</span>
                     </p>
                 </div>
